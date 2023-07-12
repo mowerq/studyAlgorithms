@@ -6,13 +6,14 @@ public class QuickSort {
 
     public static void quickSort(int[] myArray, int low, int high){
         if (low < high) {
-            int pivot = partition(myArray, low, high, myArray[(low + high) / 2]);
+            int pivot = partition(myArray, low, high);
             quickSort(myArray, low, pivot - 1);
             quickSort(myArray, pivot, high);
         }
     }
 
-    public static int partition(int[] myArray, int low, int high, int pivot){
+    public static int partition(int[] myArray, int low, int high){
+        int pivot = myArray[low];
         while (low <= high) {
             while (myArray[low] < pivot){
                 low++;
