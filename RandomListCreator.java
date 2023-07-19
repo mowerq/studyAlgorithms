@@ -24,16 +24,16 @@ public class RandomListCreator {
 
 
         try {
-            BufferedWriter writer = new BufferedWriter(new FileWriter("RandomInteger5"));
+            BufferedWriter writer = new BufferedWriter(new FileWriter("RandomInteger5.txt"));
             writer.write(myList5);
             writer.close();
-            writer = new BufferedWriter(new FileWriter("RandomInteger10"));
+            writer = new BufferedWriter(new FileWriter("RandomInteger10.txt"));
             writer.write(myList10);
             writer.close();
-            writer = new BufferedWriter(new FileWriter("RandomInteger1000"));
+            writer = new BufferedWriter(new FileWriter("RandomInteger1000.txt"));
             writer.write(myList1000);
             writer.close();
-            writer = new BufferedWriter(new FileWriter("RandomInteger100000"));
+            writer = new BufferedWriter(new FileWriter("RandomInteger100000.txt"));
             writer.write(myList100000);
             writer.close();
         } catch (IOException e) {
